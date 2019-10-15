@@ -77,7 +77,7 @@ export default {
           //       type:'success'
           //     })
               sessionStorage.setItem('user',this.logindata.username)
-              this.$router.push('task');
+              this.$router.push('monitor');
           //   }
           //   else{
           //     console.log(res.data)

@@ -2,7 +2,7 @@
     
             <el-main class="content">
                 <el-row class="tbar">
-                    <p>{{$t('message.server')}}</p>
+                    <p>机房实况</p>
                 </el-row>
                 <el-row style="height:100%;">
                     <div class="tips">

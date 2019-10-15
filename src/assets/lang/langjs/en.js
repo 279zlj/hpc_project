@@ -15,7 +15,7 @@ const en = {
         'storage': 'Storage Management',
         'pool': 'Pool',
         'list': 'Task list',
-        'server': 'Computer room live',
+        'server': 'Computer room information',
         'filea': 'Web Shell',
         'upload': 'Upload',
         'up': 'Click to upload',

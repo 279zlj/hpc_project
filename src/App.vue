@@ -9,9 +9,11 @@
         <el-aside >
             <router-view name="bar" />
         </el-aside>
+        <keep-alive>
         <el-main class='content'>
             <router-view name="content" />
         </el-main>
+        </keep-alive>
         </el-container>
       </el-container>
   </div>
@@ -43,6 +45,10 @@ body,html{
 #con{
     height:100%;
     
+}
+.tabstyle{
+  width:100%;min-height:30em;max-height:100%;
+  border-radius: .2rem
 }
 .block{
   display: block;

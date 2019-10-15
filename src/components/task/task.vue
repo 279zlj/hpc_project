@@ -204,7 +204,7 @@ export default {
                             color:function(params) {
                             //自定义颜色
                             var colorList = [          
-                                    '#AFD8F8', '#EDC240',
+                                    '#2174FF', '#E8C054',
                                 ];
                                 return colorList[params.dataIndex]
                                 }
@@ -248,7 +248,7 @@ export default {
                             color:function(params) {
                             //自定义颜色
                             var colorList = [          
-                                    '#EDC240','#AFD8F8','#CB4B4B'
+                                    '#E9BF54','#2174FF','#DE3842'
                                 ];
                                 return colorList[params.dataIndex]
                                 }
@@ -291,7 +291,7 @@ export default {
                             color:function(params) {
                             //自定义颜色
                             var colorList = [          
-                                    '#EDC240',
+                                    '#E9C054',
                                 ];
                                 return colorList[params.dataIndex]
                                 }
@@ -335,7 +335,7 @@ export default {
                             color:function(params) {
                             //自定义颜色
                             var colorList = [          
-                                    '#EDC240',
+                                    '#E9C054',
                                 ];
                                 return colorList[params.dataIndex]
                                 }
@@ -352,7 +352,7 @@ export default {
 </script>
 <style>
 .card_top{
-    margin:3rem 1rem 1rem 1rem
+    margin:1rem 1rem 1rem 1rem
 }
 .ddsize{
     width: 100%;

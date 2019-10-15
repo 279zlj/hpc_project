@@ -63,6 +63,54 @@ export default new Router({
             meta: { requiresAuth: true }
         },
         {
+            path: '/detail',
+            name: 'detail',
+            components: {
+                top: () =>
+                    import ('../components/common/topbar'),
+                bar: () =>
+                    import ('../components/common/leftbar'),
+                content: () =>
+                    import ('../components/server/detial')
+            }
+        },
+        {
+            path: '/console',
+            name: 'console',
+            components: {
+                top: () =>
+                    import ('../components/common/topbar'),
+                bar: () =>
+                    import ('../components/common/leftbar'),
+                content: () =>
+                    import ('../components/console/console')
+            }
+        },
+        {
+            path: '/shell',
+            name: 'shell',
+            components: {
+                top: () =>
+                    import ('../components/common/topbar'),
+                bar: () =>
+                    import ('../components/common/leftbar'),
+                content: () =>
+                    import ('../components/console/shell')
+            }
+        },
+        {
+            path: '/monitor',
+            name: 'monitor',
+            components: {
+                top: () =>
+                    import ('../components/common/topbar'),
+                bar: () =>
+                    import ('../components/common/leftbar'),
+                content: () =>
+                    import ('../components/monitor/monitor')
+            }
+        },
+        {
             path: '*',
             name: '*',
             component: () =>

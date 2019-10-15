@@ -4,12 +4,12 @@
             <el-row class='tbar'>
                 <p>{{$t('message.group')}}</p>
             </el-row>
-            <el-row style="margin-top:2em;">
-                <el-col :span="22" :offset="1" >
+            <el-row style="margin-top:1em;">
+                <div  style="width:98%;margin:0 auto" >
                 <el-row style='margin-bottom:.5em;float:right'>
                     <el-tooltip :content="$t('message.add')" placement="bottom"><el-button type='primary' icon="el-icon-circle-plus" size='small' @click='creategroup = true'></el-button></el-tooltip>
                 </el-row>
-                <el-table :data='groupdata.slice((currpage - 1) * pagesize, currpage * pagesize)' size='small' boder :header-cell-style="{background:'#66B1FF',color:'white'}" style="width:100%;min-height:22.5em;max-height:100%;border-radius:.5em">
+                <el-table :data='groupdata.slice((currpage - 1) * pagesize, currpage * pagesize)' size='small' boder :header-cell-style="{background:'#2174FE',color:'white',height:'3rem'}" class="tabstyle">
                     <el-table-column :label="$t('group.id')" prop="gid"></el-table-column>
                     <el-table-column :label="$t('group.name')" prop="name"></el-table-column>
                     <el-table-column :label="$t('message.oper')" width="250">
@@ -22,7 +22,7 @@
                     layout="total, sizes, prev, pager, next, jumper"
                     @size-change="handleSizeChange"
                     @current-change="handleCurrentChange"
-                    :page-sizes="[15,30,45]"
+                    :page-sizes="[10,20,30]"
                     :page-size="pagesize"
                     :total="pageTotal" style="text-align: right;margin: 1em">
                     </el-pagination>
@@ -37,7 +37,7 @@
                         </el-form-item>
                     </el-form>
                 </el-dialog>
-                </el-col>
+                </div>
                 
             </el-row>
             
@@ -50,7 +50,7 @@ export default {
     name:'user',
     data(){
         return{
-            pagesize: 15,
+            pagesize: 10,
             currpage: 1,
             creategroup:false,
             target:'',

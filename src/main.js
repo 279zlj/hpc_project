@@ -13,8 +13,8 @@ Vue.config.productionTip = false
 Vue.use(Element)
 Vue.prototype.$axios = axios
 Vue.prototype.$echarts = echarts
-    // Vue.prototype.$host = 'http://192.168.11.232:8000/'
-Vue.prototype.$host = 'http://' + location.hostname + ':8000/'
+Vue.prototype.$host = 'http://192.168.11.232:8000/'
+    // Vue.prototype.$host = 'http://' + location.hostname + ':8000/'
 
 router.beforeEach((to, from, next) => { // 路由守卫
         var name = sessionStorage.getItem('user');
